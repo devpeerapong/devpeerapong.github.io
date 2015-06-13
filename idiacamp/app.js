@@ -14,7 +14,7 @@ angular.module('idiacamp', [])
 				platform: 'Hardware',
 				picture: 'http://kawaii.kawaii.at/img/library-books-fabric-by-Timeless-Treasures-USA-171942-1.jpg',
 				team: '',
-				isSelected: false
+				isSelected: true
 			},
 			{
 				name: 'BTS/MRT Ticket',
