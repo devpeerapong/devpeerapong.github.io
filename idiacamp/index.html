@@ -27,7 +27,7 @@
 			<p>Project Pitching</p>
 		</div>
 		<div class="fluid-container">
-			<div class="col-sm-2" ng-repeat="project in projects track by $index">
+			<div class="col-sm-2" ng-repeat="project in projects track by $index" ng-click="chooseProject(project)">
 				<div class="thumbnail" ng-class="{ active: project.isSelected }">
 					<img ng-src="{{ project.picture }}" alt="...">
 					<p class="text-center"><strong>{{ project.name }}</strong></p>
