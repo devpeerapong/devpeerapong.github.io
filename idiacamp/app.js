@@ -26,7 +26,7 @@ angular.module('idiacamp', [])
 			{
 				name: 'SmartHome',
 				platform: 'Hardware',
-				picture: 'https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpt1/v/t34.0-12/11297731_891411547619713_1269339475_n.jpg?oh=0d06b2041ad8196e16e1ccbbca39c4dc&oe=557E10BB&__gda__=1434274504_f59ca0d56b0e7d2ed07131a00bae7f7e',
+				picture: 'https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xpt1/v/t34.0-12/11297731_891411547619713_12	69339475_n.jpg?oh=0d06b2041ad8196e16e1ccbbca39c4dc&oe=557E10BB&__gda__=1434274504_f59ca0d56b0e7d2ed07131a00bae7f7e',
 				team: '',
 				isSelected: false
 			},

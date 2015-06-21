@@ -1,0 +1,217 @@
+@font-face {
+    font-family: sukhumwit;
+    src: url('../font/DSNSKW__.TTF');
+}
+
+@font-face {
+    font-family: quark;
+    src: url('../font/Quark-Light.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: quark;
+    src: url('../font/Quark-Bold.otf');
+    font-weight: bold;
+}
+
+* {
+	font-family: sukhumwit;
+	color: #424242;
+}
+
+section h1 {
+	font-size: 3em;
+}
+
+.blue {
+	color: #09b7cf;
+}
+
+.yellow {
+	color: #ffff00;
+}
+
+.nav, .navbar-brand {
+	min-height: 60px;
+	color: #424242;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav {
+	color: #424242;
+}
+
+.navbar-brand {
+	font-size: 3em;
+	line-height: 0.7em;
+}
+
+.navbar-default {
+	background-color: #FFF;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #424242;
+	font-size: 2em;
+	line-height: 1em;
+}
+
+#home {
+	background-color: #09b7cf;
+	padding-bottom: 0px;
+	padding-top: 60px;
+}
+
+#home h1 {
+	font-size: 3.5em;
+	margin-top: 0px;
+}
+
+#home p {
+	color: #FFF;
+	font-size: 2.5em;
+}
+
+#home label {
+	font-size: 2em;
+}
+
+#home .brand-img {
+	margin-left: 13em;
+	margin-top: 4.5em;
+	width: 140%;
+}
+
+#home label {
+	font-family: quark;
+	font-size: 1.5em;
+}
+
+#home .van {
+	margin-top: 3em;
+	margin-bottom: -5em;
+}
+
+#home .btn-yellow {
+	font-family: quark;
+	color: #000;
+  	background-color: #ffff00;
+  	font-weight: bold;
+  	border-radius: 2em;
+  	padding-left: 2em;
+  	padding-right: 2em;
+}
+
+#work p {
+	font-family: quark;
+	color: #FFF;
+	font-size: 1.1em;
+}
+
+#work h1 {
+	color: #FFF;
+}
+
+.btn-thaivans-primary {
+	background-color: #FFF;
+	color: #09b7cf;
+	font-size: 1.5em;
+	border-radius: 0px;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.btn-thaivans-primary:hover {
+	background-color: #09b7cf;
+	border-color: #FFF;
+	color: #FFF;
+}
+
+.info {
+	background-color: #09b7cf;
+	padding: 250px 25px;
+	margin-bottom: 25px;
+	max-height: 800px;
+	transition: all 500ms ease;
+}
+
+.info-wrapper-signage {
+	background: url('https://placehold.it/500x800') no-repeat center center;
+}
+
+.info-wrapper-app {
+	background: url('https://placehold.it/500x800') no-repeat center center;
+}
+
+.info-wrapper-vdo {
+	background: url('https://placehold.it/500x800') no-repeat center center;
+}
+
+.info:hover {
+	background: rgba(0,0,0,0);
+}
+
+#work .circle {
+	background-color: #FFF;
+	font-size: 3em;
+	border-radius: 1em;
+	padding: 0 0.6em;
+	width: 1.5em;
+	height: 1.5em;
+}
+
+#gallery .col-md-4 {
+	padding: 0px;
+}
+
+#team {
+	background-color: #EEE;
+}
+
+#team .thumbnail * {
+	font-family: quark;
+}
+
+#team .thumbnail {
+	border: none;
+	background: none;
+}
+
+#contact .circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: #09b7cf;
+}
+
+#contact .circle.fb {
+	padding: 30px 0px;
+}
+
+#contact .circle.mail {
+	padding: 30px 0px;
+}
+
+#contact .circle.phone {
+	padding: 30px 0px;
+}
+
+#contact i {
+	font-size: 3em;
+	color: #FFF;
+}
+
+#contact p strong{
+	font-family: quark;
+	font-size: 1.5em;
+}
+
+footer.jumbotron {
+	margin-bottom: 0px;
+	background-color: #444;
+}
+
+footer h3 {
+	color: #FFF;
+	font-family: quark;
+}
