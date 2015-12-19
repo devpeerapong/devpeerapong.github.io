@@ -1,40 +1,24 @@
 <html ng-app="idiacamp">
 	<head>
-		<title>I-Dia Camp #4 | Project</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-		<style>
-			.col-sm-2 .thumbnail.active {
-				border-color: #2ecc71;
-				background-color: #2ecc71;
-			}
+		<title>I-Dia Camp | Media Technology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <base href="/idiacamp/"></base>
 
-			.col-sm-2 .thumbnail {
-				background-color: #f1c40f;
-				border-color: #f1c40f;
-				color: #FFF;
-				cursor: pointer;
-			}
+    <link href='https://fonts.googleapis.com/css?family=Kanit:400,200,500,700,300&subset=thai,latin' rel='stylesheet' type='text/css'>
+		
 
-			.col-sm-2 .thumbnail p {
-				margin-top: 10px;
-			}
-		</style>
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/vendor.css">
 	</head>
-	<body ng-controller="MainController">
-		<div class="jumbotron text-center">
-			<h1>I-Dia Camp 4</h1>
-			<h4>Guardian</h4>
-			<p>Project Pitching</p>
-		</div>
-		<div class="fluid-container">
-			<div class="col-sm-2" ng-repeat="project in projects track by $index" ng-click="chooseProject(project)">
-				<div class="thumbnail" ng-class="{ active: project.isSelected }">
-					<img ng-src="{{ project.picture }}" alt="...">
-					<p class="text-center"><strong>{{ project.name }}</strong></p>
-				</div>
-			</div>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
-		<script src="app.js"></script>		
+	<body>
+		
+    <section ui-view></section>
+
+		
+    
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/idiacamp.tpl.js"></script>
 	</body>
 </html>
