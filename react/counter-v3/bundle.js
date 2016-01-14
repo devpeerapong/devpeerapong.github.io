@@ -138,7 +138,7 @@
 				var newState = this.state;
 				for (var i = 0; i < newState.counter.length; i++) {
 					if (newState.counter[i].id === index) {
-						newState.counter[i].count = newState.counter[i].count + 1;
+						newState.counter[i].count = newState.counter[i].count - 1;
 						break;
 					}
 				}
