@@ -1,0 +1,68 @@
+.framit-navbar{
+	height: 80px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.framit-brand{
+	font-family: 'Helvetica Neue';
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: 3px;
+	color: #333;
+	padding-top: 7px;
+	display: block;
+}
+.framit-brand:hover,
+.framit-brand:active,
+.framit-brand:focus,
+.framit-navbar-link:hover,
+.framit-navbar-link:active,
+.framit-navbar-link:focus
+{
+	text-decoration: none;
+	color: #333;
+}
+.framit-searchbar{
+	height: 36px;
+	border-radius: 1px;
+	margin-top: 3px;
+}
+.framit-input-group{
+	position: relative;
+}
+
+.framit-input-group > .mdi {
+	position: absolute;
+    top: 8px;
+    right: 15px;
+    font-size: 20px;
+    color: #ccc;
+}
+.framit-navbar-link{
+	float: right;
+	font-size: 32px;
+	color: #333;
+	margin-left: 50px;
+
+}
+.framit-navbar-row{
+	padding-top: 18px;
+	padding-bottom: 20px;
+	height: 80px;
+
+}
+.framit-container{
+	background-color: #fafafa;
+}
+.framit-footer{
+	min-height: 50px;
+	border-top: 1px solid #dbdbdb;
+	padding: 10px 0px;
+}
+.framit-credit{
+	margin-top: 5px;
+	display: block;
+	letter-spacing: 2px;
+	font-weight: 500;
+
+}
