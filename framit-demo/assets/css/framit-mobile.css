@@ -3,6 +3,15 @@
 		margin-left: 15px;
 	}
   .framit-brand{
+    padding-top: 9px;
+  }
+  .framit-navbar{
+    height: 60px;
+  }
+
+  .framit-navbar-row{
     padding-top: 10px;
+    padding-bottom: 10px;
+    height: 60px;
   }
 }
