@@ -1,0 +1,78 @@
+.landing-container{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+.landing-container > .image{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	z-index: 9000;
+	background-size: 100% 100% !important;
+}
+
+.landing-container > .image.image-1 {
+	background: url("../images/landing/image-landing-1-master.jpg") no-repeat center center;
+}
+.landing-container > .image.image-2 {
+	background: url("../images/landing/image-landing-2-master.jpg") no-repeat center center;
+}
+.landing-container > .image.image-3 {
+	background: url("../images/landing/image-landing-3-master.jpg") no-repeat center center;
+}
+.landing-container > .image.image-4 {
+	background: url("../images/landing/image-landing-4-master.jpg") no-repeat center center;
+}
+.landing-container > .image.image-5 {
+	background: url("../images/landing/image-landing-5-master.jpg") no-repeat center center;
+}
+
+.landing-container > .content-container{
+	display: block;
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	z-index: 9999;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.landing-title{
+	font-size: 72px;
+	color: #efefef;
+	margin: 0px;
+	font-family: 'Helvetica Neue';
+	font-weight: bold;
+	text-shadow: 0px 2px 8px rgba(0,0,0,.2);
+}
+.landing-tagline{
+	font-size: 24px;
+	color: #efefef;
+	margin-top: 0px;
+	font-family: 'Helvetica Neue';
+	font-weight: 500;
+	text-shadow: 0px 2px 8px rgba(0,0,0,.2);
+}
+.landing-form-container{
+	background-color: rgba(255,255,255,.7);
+	padding: 30px 40px;
+	box-shadow: 0px 2px 8px rgba(22,22,22,.8);
+	border-radius: 1px;
+	margin-bottom: 35px;
+}
+.form-label{
+	font-weight: 500;
+	font-size: 16px;
+	margin-bottom: 7px;
+}
+.landing-line{
+	height: 1px;
+	background-color: #999;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+.landing-body{
+	background-color: #444;
+}
