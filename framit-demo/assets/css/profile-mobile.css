@@ -1,0 +1,40 @@
+.profile-info-mobile{
+	margin-bottom: 15px;
+}
+.profile-info-mobile .profile-image {
+	background-color: #fafafa;
+	border: 1px solid #dbdbdb;
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+.profile-info-mobile .profile-username{
+	font-size: 21px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	color: #333;
+	margin-top: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.profile-info-mobile .framit-btn-follow{
+	margin-left: 0;
+	font-size: 12px;
+}
+.profile-info-mobile .framit-profile-stats{
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.profile-info-mobile .profile-info{
+	margin-bottom: 60px;
+}
+.profile-info-mobile .framit-btn-account{
+	padding-left: 0;
+	padding-right: 0;
+}

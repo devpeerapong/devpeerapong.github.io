@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Framit | An easy way to celebrate your events.
+	</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://cdn.materialdesignicons.com/1.5.54/css/materialdesignicons.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/app-mobile.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/framit.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/framit-mobile.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-utility.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-override.css">
+</head>
+<body>
+	<div class="framit-navbar">
+		<div class="container">
+			<div class="row framit-navbar-row">
+				<div class="col-sm-4 col-xs-3"><a href="#" class="framit-brand">FRAMIT</a></div>
+				<div class="col-sm-4 hidden-xs">
+					<div class="framit-input-group">
+						<input type="text" class="form-control framit-searchbar" placeholder="Search">
+						<i class="mdi mdi-magnify"></i>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-9">
+					<a class="framit-navbar-link" href="#"><i class="mdi mdi-account"></i></a>
+					<a class="framit-navbar-link" href="#"><i class="mdi mdi-upload"></i></a>
+					<a class="framit-navbar-link visible-xs" href="#"><i class="mdi mdi-magnify"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="framit-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<button class="card-container framit-upload">
+						<div class="upload-icon">
+							<i class="mdi mdi-upload"></i>
+						</div>
+						<span class="text">UPLOAD YOUR FRAME</span>
+					</button>
+					<form id="framit-upload-btn" class="card-container framit-upload-expand hidden">
+						<div class="upload">
+							<i class="mdi mdi-upload"></i><br><br>
+						</div>
+						<div class="upload-form">
+							<div class="form-group">
+								<label class="form-label">Title</label>
+								<input type="text" class="form-control">
+							</div>
+							<div class="button-group">
+								<button id="cancel-upload" type="button" class="btn btn-default btn-upload">CANCEL</button>
+								<button type="button" class="btn btn-primary btn-upload">UPLOAD</button>
+							</div>
+						</div>
+					</form>
+					<div class="card-container">
+						<div class="card-header">
+
+							<a class="image" href="#">
+								<img src="https://placehold.it/28x28">
+							</a>
+							<a class="text" href="#">
+								tanawatchai
+							</a>
+
+							<div class="time">
+								3h
+							</div>
+						</div>
+						<a href="#" class="image">
+							<img src="https://placehold.it/800x800" class="img-responsive" alt="">
+						</a>
+						<div class="card-body">
+							<div class="title">Genesis Lab</div>
+							<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+						</div>
+						<div class="card-footer">
+							<div class="love-counter">
+								<button class="button"><i class="mdi mdi-heart-outline"></i></button>
+								<div class="text">3,000</div>
+							</div>
+							<div class="copy-url">
+								<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
+								<div class="notification" alert="1">Copy URL to clipboard</div>
+							</div>
+						</div>
+					</div>
+					<div class="card-container">
+						<div class="card-header">
+
+							<a class="image" href="#">
+								<img src="https://placehold.it/28x28">
+							</a>
+							<a class="text" href="#">
+								tanawatchai
+							</a>
+
+							<div class="time">
+								3h
+							</div>
+						</div>
+						<a href="#" class="image">
+							<img src="https://placehold.it/800x800" class="img-responsive" alt="">
+						</a>
+						<div class="card-body">
+							<div class="title">Genesis Lab</div>
+							<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos expedita enim sunt non quibusdam porro, delectus explicabo rerum incidunt architecto, mollitia praesentium dicta eos molestias deserunt perferendis alias quam laudantium?</div>
+						</div>
+						<div class="card-footer">
+							<div class="love-counter">
+								<button class="button"><i class="mdi mdi-heart"></i></button>
+								<div class="text">3,000</div>
+							</div>
+							<div class="copy-url">
+								<button class="icon" notification="2" data-clipboard-action="copy" data-clipboard-text="this should copy url from 2"><i class="mdi mdi-link-variant"></i></button>
+								<div class="notification" alert="2">Copy URL to clipboard</div>
+							</div>
+						</div>
+					</div>
+					<button class="framit-loadmore btn-block">
+						LOAD MORE
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="framit-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 text-center"><span class="framit-credit">Copyright © 2016<br class="visible-xs"> Framit | All rights reserved.</span></div>
+				<div class="col-sm-6 text-center"><span class="framit-credit">Made with <span style="color: #e74c3c;">♥</span> by<br class="visible-xs"> lactoz & overpondz</span></div>
+			</div
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js"></script>
+	<script src="../assets/js/newsfeed.js"></script>
+	<script src="../assets/js/dropzone.js"></script>
+</body>
+
+</html>

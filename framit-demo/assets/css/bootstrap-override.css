@@ -29,7 +29,8 @@ a:active {
 	border-radius: 0;
 	font-weight: 500;
 	letter-spacing: 1px;
-
+	padding-left: 25px;
+	padding-right: 25px;
 }
 .btn-primary{
 	background-color: #444;
