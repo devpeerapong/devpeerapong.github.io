@@ -1,0 +1,47 @@
+@media (max-width: 768px){
+		.follow-title{
+		margin-bottom:20px;
+		margin-top: 20px;
+		font-size: 25px;
+	}
+	.card-item{
+	height: 70px;
+	padding: 10px 10px;
+	}	
+	.card-item > .image{
+	border-radius: 50%;
+	margin-right:10px;
+	width: 30px;
+	height: 30px;
+	}
+	.card-item > .profile-info{
+	flex-grow: 1;
+	height: auto;
+	margin-top: 5px;
+	}
+	.card-item > .profile-info > .username{
+	font-size:14px;
+	font-weight: 600;
+	}
+	.card-item > .profile-info > .profile-stats > .stat {
+	display: inline-block;
+	margin-right: 5px;
+	letter-spacing:1px;
+	font-size: 12px;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	}
+	.card-item > .framit-btn-follow{
+	margin-left: auto;
+	flex-shrink: 1;
+	font-size: 12px;
+	}
+	.card-item > .framit-btn-follow{
+	width: 100px;
+	margin-left: auto;
+	flex-shrink: 1;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+}

@@ -1,0 +1,19 @@
+.card-list > .item{
+	font-size: 16px;
+	padding: 14px 20px;
+	font-weight: 500;
+	color: #333;
+	border-bottom: 1px  solid #ccc;
+	color: #ccc;
+	display: block;
+}
+.card-list > .item.active{
+	color: #333;
+	font-weight: 600;
+}
+.setting-form{
+	padding:20px;
+}
+.setting-form .form-label{
+	font-weight: 600;
+}

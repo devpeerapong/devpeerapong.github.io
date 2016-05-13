@@ -23,6 +23,9 @@
 	font-weight: 500;
 	letter-spacing: 1px;
 }
-.profile-info{
+.profile-page > .profile-info{
 	margin-bottom: 60px;
+}
+.profile-info .framit-btn-follow:last-child{
+	margin-left: 0px;
 }

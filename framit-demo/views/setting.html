@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Framit | An easy way to celebrate your events.
+	</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="http://cdn.materialdesignicons.com/1.5.54/css/materialdesignicons.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/app.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/app-mobile.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/framit.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/framit-mobile.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-utility.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-override.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/profile.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/profile-mobile.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/follow.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/follow-mobile.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/setting.css">
+</head>
+<body>
+	<div class="framit-navbar">
+		<div class="container">
+			<div class="row framit-navbar-row">
+				<div class="col-sm-4 col-xs-3"><a href="newsfeed.html" class="framit-brand">FRAMIT</a></div>
+				<div class="col-sm-4 hidden-xs">
+					<div class="framit-input-group">
+						<input type="text" class="form-control framit-searchbar" placeholder="Search">
+						<i class="mdi mdi-magnify"></i>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-9">
+					<a class="framit-navbar-link" href="profile.html"><i class="mdi mdi-account"></i></a>
+					<a class="framit-navbar-link" href="#"><i class="mdi mdi-upload"></i></a>
+					<a class="framit-navbar-link visible-xs" href="#"><i class="mdi mdi-magnify"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="framit-container">
+		<div class="container">
+			<div class="row profile-info hidden-xs">
+				<div class="col-md-4">
+					<img src="http://screenshots.en.sftcdn.net/en/scrn/24000/24681/adobe-flash-player-6.jpg" class="profile-image"alt="">
+				</div>
+				<div class="col-md-8">
+					<h1 class="profile-username">Tanawatchai
+						<!-- <button class="btn btn-default framit-btn-follow">
+							FOLLOW
+						</button> -->
+						<!-- <button class="btn btn-primary framit-btn-follow">
+							FOLLOWING
+						</button> -->
+						<a class="btn btn-primary framit-btn-follow" href="setting.html">
+							SETTINGS
+						</a>
+						<a class="btn btn-default framit-btn-follow" href="index.html">
+							LOGOUT
+						</a>
+					</h1>
+					<h4 class="framit-profile-stats">
+						1,400<br class="visible-xs"> posts
+					</h4>
+					<a class="framit-profile-stats" href="follower.html">
+						1,400<br class="visible-xs"> followers
+					</a>
+					<a class="framit-profile-stats" href="following.html">
+						400<br class="visible-xs"> following
+					</a>
+				</div>
+			</div>
+			<div class="row profile-info-mobile visible-xs">
+				<div class="col-xs-4">
+					<img src="https://placehold.it/360" class="profile-image"alt="">
+				</div>
+				<div class="col-xs-8 no-padding-left">
+					<h1 class="profile-username">Tanawatchai Boonumpai</h1>
+						<!-- <button class="btn btn-default framit-btn-follow btn-block">
+							FOLLOW
+						</button> -->
+						<!-- <button class="btn btn-primary framit-btn-follow btn-block">
+							FOLLOWING
+						</button> -->
+						<div class="row">
+							<div class="col-xs-6 no-padding-right ">
+								<a class="btn btn-primary btn-block framit-btn-account" href="setting.html">
+									SETTINGS
+								</a>
+							</div>
+							<div class="col-xs-6 no-padding-left">
+								<a class="btn btn-default btn-block framit-btn-account" href="index.html">
+									LOGOUT
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row profile-info-mobile visible-xs">
+					<div class="col-xs-4">
+						<a class="framit-profile-stats">
+							1,400<br class="visible-xs"> posts
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a class="framit-profile-stats" href="follower.html">
+							1,400<br class="visible-xs"> followers
+						</a>
+					</div>
+					<div class="col-xs-4">
+						<a class="framit-profile-stats" href="following.html">
+							400<br class="visible-xs"> following
+						</a>
+					</div>
+				</div>
+				<h1 class="follow-title">SETTINGS</h1>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="card-container">
+							<div class="card-list">
+								<a class="item active" href="setting.html">
+									PROFILE PICTURE
+								</a>
+								<a class="item" href="setting_password.html">
+									PASSWORD
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9">
+						<div class="card-container">
+							<form action="newsfeed.html" class="setting-form">
+								<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="form-label">Old Password</label>
+										<input class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="form-label">New Password</label>
+										<input class="form-control">
+									</div>
+									<div class="form-group">
+										<label class="form-label">Confirm New Password</label>
+										<input class="form-control">
+									</div>
+								</div>
+								</div>
+								<div class="form-group text-right">
+									<button type="submit" class="btn btn-primary">
+										SUBMIT
+									</button>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="framit-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 text-center"><span class="framit-credit">Copyright © 2016<br class="visible-xs"> Framit | All rights reserved.</span></div>
+					<div class="col-sm-6 text-center"><span class="framit-credit">Made with <span style="color: #e74c3c;">♥</span> by<br class="visible-xs"> lactoz & overpondz</span></div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js"></script>
+		<script src="../assets/js/newsfeed.js"></script>
+		<script src="../assets/js/dropzone.js"></script>
+
+	</body>

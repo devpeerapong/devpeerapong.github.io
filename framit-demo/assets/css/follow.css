@@ -1,0 +1,45 @@
+.card-item{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	padding: 14px 25px;
+	height: 120px;
+	border-bottom: 1px solid;
+	border-color: #efefef;
+}
+.card-item > .framit-btn-follow{
+	margin-left: auto;
+	flex-shrink: 1;
+}
+.card-item > .profile-info{
+	flex-grow: 1;
+	height: 50px;
+}
+.card-item > .profile-info > .username{
+	font-size:24px;
+	font-weight: 600;
+}
+.card-item > .profile-info > .profile-stats > .stat {
+	display: inline-block;
+	margin-right: 15px;
+	letter-spacing:1px;
+}
+.card-item > .image{
+	background-color: #fafafa;
+	border: 1px solid #dbdbdb;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	margin-right:25px;
+}
+.follow-title{
+	margin-bottom:60px;
+	margin-top: 60px;
+}
+.follow-title.search{
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+.card-item > .image.frame{
+	border-radius: 0px;
+}

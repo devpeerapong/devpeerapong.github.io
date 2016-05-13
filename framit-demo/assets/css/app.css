@@ -76,4 +76,9 @@
 .landing-body{
 	background-color: #444;
 }
-
+.landing-logo {
+	width: 128px;
+	height: 128px;
+	display: block;
+	margin-bottom: 20px;
+}

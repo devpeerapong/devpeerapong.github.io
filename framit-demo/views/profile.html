@@ -7,6 +7,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="http://cdn.materialdesignicons.com/1.5.54/css/materialdesignicons.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/fonts.css">
@@ -31,35 +33,43 @@
 					</div>
 				</div>
 				<div class="col-sm-4 col-xs-9">
-					<a class="framit-navbar-link" href="#"><i class="mdi mdi-account"></i></a>
+					<a class="framit-navbar-link" href="profile.html"><i class="mdi mdi-account"></i></a>
 					<a class="framit-navbar-link" href="#"><i class="mdi mdi-upload"></i></a>
 					<a class="framit-navbar-link visible-xs" href="#"><i class="mdi mdi-magnify"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<div class="framit-container">
-		<div class="container">
+		<div class="container profile-page">
 			<div class="row profile-info hidden-xs">
 				<div class="col-md-4">
-					<img src="https://placehold.it/360" class="profile-image"alt="">
+					<img src="http://screenshots.en.sftcdn.net/en/scrn/24000/24681/adobe-flash-player-6.jpg" class="profile-image"alt="">
 				</div>
 				<div class="col-md-8 ">
-					<h1 class="profile-username">Tanawatchai 
-						<button class="btn btn-default framit-btn-follow">
+					<h1 class="profile-username">Tanawatchai
+						<!-- <button class="btn btn-default framit-btn-follow">
 							FOLLOW
-						</button>
+						</button> -->
+						<!-- <button class="btn btn-primary framit-btn-follow">
+							FOLLOWING
+						</button> -->
+						<a class="btn btn-primary framit-btn-follow" href="setting.html">
+							SETTINGS
+						</a>
+						<a class="btn btn-default framit-btn-follow" href="index.html">
+							LOGOUT
+						</a>
 					</h1>
 					<h4 class="framit-profile-stats">
 						1,400<br class="visible-xs"> posts
 					</h4>
-					<h4 class="framit-profile-stats">
+					<a class="framit-profile-stats" href="follower.html">
 						1,400<br class="visible-xs"> followers
-					</h4>
-					<h4 class="framit-profile-stats">
+					</a>
+					<a class="framit-profile-stats" href="following.html">
 						400<br class="visible-xs"> following
-					</h4>
+					</a>
 				</div>
 			</div>
 			<div class="row profile-info-mobile visible-xs">
@@ -76,173 +86,168 @@
 						</button> -->
 						<div class="row">
 							<div class="col-xs-6 no-padding-right ">
-							<button class="btn btn-primary btn-block framit-btn-account">
+								<a class="btn btn-primary btn-block framit-btn-account" href="setting.html">
 									SETTINGS
-								</button>
+								</a>
 							</div>
 							<div class="col-xs-6 no-padding-left">
-								<button class="btn btn-default btn-block framit-btn-account">
+								<a class="btn btn-default btn-block framit-btn-account" href="index.html">
 									LOGOUT
-								</button>
+								</a>
 							</div>
 						</div>
-						
-						
 					</div>
 				</div>
 				<div class="row profile-info-mobile visible-xs">
 					<div class="col-xs-4">
-						<h4 class="framit-profile-stats">
+						<a class="framit-profile-stats">
 							1,400<br class="visible-xs"> posts
-						</h4>
+						</a>
 					</div>
 					<div class="col-xs-4">
-						<h4 class="framit-profile-stats">
+						<a class="framit-profile-stats" href="follower.html">
 							1,400<br class="visible-xs"> followers
-						</h4>
+						</a>
 					</div>
 					<div class="col-xs-4">
-						<h4 class="framit-profile-stats">
+						<a class="framit-profile-stats" href="following.html">
 							400<br class="visible-xs"> following
-						</h4>
+						</a>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card-container">
-							<a href="#" class="image">
-								<img src="https://placehold.it/800x800" class="img-responsive" alt="">
-							</a>
-							<div class="card-body">
-								<div class="title">Genesis Lab</div>
-								<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card-container">
+						<a href="#" class="image">
+							<img src="https://placehold.it/800x800" class="img-responsive" alt="">
+						</a>
+						<div class="card-body">
+							<a class="title" href="#">Genesis Lab</a>
+							<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+						</div>
+						<div class="card-footer">
+							<div class="love-counter">
+								<button class="button"><i class="mdi mdi-heart-outline"></i></button>
+								<div class="text">3,000</div>
 							</div>
-							<div class="card-footer">
-								<div class="love-counter">
-									<button class="button"><i class="mdi mdi-heart-outline"></i></button>
-									<div class="text">3,000</div>
-								</div>
-								<div class="copy-url">
-									<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
-									<div class="notification" alert="1">Copy URL to clipboard</div>
-								</div>
+							<div class="copy-url">
+								<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
+								<div class="notification" alert="1">Copy URL to clipboard</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="card-container">
-							<a href="#" class="image">
-								<img src="https://placehold.it/800x800" class="img-responsive" alt="">
-							</a>
-							<div class="card-body">
-								<div class="title">Genesis Lab</div>
-								<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-container">
+						<a href="#" class="image">
+							<img src="https://placehold.it/800x800" class="img-responsive" alt="">
+						</a>
+						<div class="card-body">
+							<div class="title">Genesis Lab</div>
+							<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+						</div>
+						<div class="card-footer">
+							<div class="love-counter">
+								<button class="button"><i class="mdi mdi-heart-outline"></i></button>
+								<div class="text">3,000</div>
 							</div>
-							<div class="card-footer">
-								<div class="love-counter">
-									<button class="button"><i class="mdi mdi-heart-outline"></i></button>
-									<div class="text">3,000</div>
-								</div>
-								<div class="copy-url">
-									<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
-									<div class="notification" alert="1">Copy URL to clipboard</div>
-								</div>
+							<div class="copy-url">
+								<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
+								<div class="notification" alert="1">Copy URL to clipboard</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="card-container">
-							<a href="#" class="image">
-								<img src="https://placehold.it/800x800" class="img-responsive" alt="">
-							</a>
-							<div class="card-body">
-								<div class="title">Genesis Lab</div>
-								<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-container">
+						<a href="#" class="image">
+							<img src="https://placehold.it/800x800" class="img-responsive" alt="">
+						</a>
+						<div class="card-body">
+							<div class="title">Genesis Lab</div>
+							<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+						</div>
+						<div class="card-footer">
+							<div class="love-counter">
+								<button class="button"><i class="mdi mdi-heart-outline"></i></button>
+								<div class="text">3,000</div>
 							</div>
-							<div class="card-footer">
-								<div class="love-counter">
-									<button class="button"><i class="mdi mdi-heart-outline"></i></button>
-									<div class="text">3,000</div>
-								</div>
-								<div class="copy-url">
-									<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
-									<div class="notification" alert="1">Copy URL to clipboard</div>
-								</div>
+							<div class="copy-url">
+								<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
+								<div class="notification" alert="1">Copy URL to clipboard</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="card-container">
-							<a href="#" class="image">
-								<img src="https://placehold.it/800x800" class="img-responsive" alt="">
-							</a>
-							<div class="card-body">
-								<div class="title">Genesis Lab</div>
-								<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-container">
+						<a href="#" class="image">
+							<img src="https://placehold.it/800x800" class="img-responsive" alt="">
+						</a>
+						<div class="card-body">
+							<div class="title">Genesis Lab</div>
+							<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+						</div>
+						<div class="card-footer">
+							<div class="love-counter">
+								<button class="button"><i class="mdi mdi-heart-outline"></i></button>
+								<div class="text">3,000</div>
 							</div>
-							<div class="card-footer">
-								<div class="love-counter">
-									<button class="button"><i class="mdi mdi-heart-outline"></i></button>
-									<div class="text">3,000</div>
-								</div>
-								<div class="copy-url">
-									<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
-									<div class="notification" alert="1">Copy URL to clipboard</div>
-								</div>
+							<div class="copy-url">
+								<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
+								<div class="notification" alert="1">Copy URL to clipboard</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="card-container">
-							<a href="#" class="image">
-								<img src="https://placehold.it/800x800" class="img-responsive" alt="">
-							</a>
-							<div class="card-body">
-								<div class="title">Genesis Lab</div>
-								<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
-							</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card-container">
+						<a href="#" class="image">
+							<img src="https://placehold.it/800x800" class="img-responsive" alt="">
+						</a>
+						<div class="card-body">
+							<div class="title">Genesis Lab</div>
+							<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+						</div>
 
-							<div class="card-footer">
-								<div class="love-counter">
-									<button class="button"><i class="mdi mdi-heart-outline"></i></button>
-									<div class="text">3,000</div>
-								</div>
-								<div class="copy-url">
-									<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
-									<div class="notification" alert="1">Copy URL to clipboard</div>
-								</div>
+						<div class="card-footer">
+							<div class="love-counter">
+								<button class="button"><i class="mdi mdi-heart-outline"></i></button>
+								<div class="text">3,000</div>
+							</div>
+							<div class="copy-url">
+								<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
+								<div class="notification" alert="1">Copy URL to clipboard</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="card-container">
-							<a href="#" class="image">
-								<img src="https://placehold.it/800x800" class="img-responsive" alt="">
-							</a>
-							<div class="card-body">
-								<div class="title">Genesis Lab</div>
-								<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
-							</div>
-							<div class="card-footer">
-								<div class="love-counter">
-									<button class="button"><i class="mdi mdi-heart-outline"></i></button>
-									<div class="text">3,000</div>
-								</div>
-								<div class="copy-url">
-									<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
-									<div class="notification" alert="1">Copy URL to clipboard</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<button class="framit-loadmore btn-block">
-						LOAD MORE
-					</button>
 				</div>
+				<div class="col-md-4">
+					<div class="card-container">
+						<a href="#" class="image">
+							<img src="https://placehold.it/800x800" class="img-responsive" alt="">
+						</a>
+						<div class="card-body">
+							<div class="title">Genesis Lab</div>
+							<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, voluptatum. Sed laboriosam iste impedit maiores eveniet quae, doloremque, facilis illo enim ullam labore delectus quidem deleniti placeat quam odio corporis!</div>
+						</div>
+						<div class="card-footer">
+							<div class="love-counter">
+								<button class="button"><i class="mdi mdi-heart-outline"></i></button>
+								<div class="text">3,000</div>
+							</div>
+							<div class="copy-url">
+								<button class="icon" notification="1" data-clipboard-action="copy" data-clipboard-text="this should copy url from 1"><i class="mdi mdi-link-variant"></i></button>
+								<div class="notification" alert="1">Copy URL to clipboard</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button class="framit-loadmore btn-block">
+					LOAD MORE
+				</button>
 			</div>
 		</div>
-
-
 		<div class="framit-footer">
 			<div class="container">
 				<div class="row">
