@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>04 - Link Tag</title>
+  </head>
+  <body>
+    <h1>Link Tag</h1>
+    <p>link ถือเป็นส่วนสำคัญสำหรับเครือข่าย www เพราะมันช่วยให้เราเข้าถึง Website อื่น ๆ ได้อย่างง่ายดาย โดยส่วนใหญ่แล้วรูปแบบของ link จะมีไม่มาก เช่น</p>
+    <ol id="type">
+      <li>link ไปยัง <strong>Website อื่น</strong></li>
+      <li>link ไปยัง <strong>Web Page อื่นของ Website เดียวกัน</strong></li>
+      <li>link ไปยัง <strong>ส่วนอื่นในหน้า Web Page เดียวกัน</strong></li>
+      <li>link ที่<strong>เปิดหน้าต่างใหม่</strong></li>
+    </ol>
+    <p>ในการทำให้ข้อความกลายเป็น link เราจะใช้ TAG a ครอบข้อความนั้น ๆ</p>
+    <p>แต่การใส่ TAG a อย่างเดียว<strong>ไม่เพียงพอ</strong>ที่จะทำให้ข้อความกลายเป็น link ได้ เนื่องจากเราต้อง<strong>กำหนดปลายทาง</strong>ให้กับ link นั้นด้วย</p>
+    <p>ซึ่งเราสามารถ<strong>กำหนดปลายทาง</strong>ให้กับ link ได้ด้วยการใส่ <strong>คุณลักษณะ (Attribute)</strong> ที่ชื่อ <strong>href</strong> ให้กับ TAG a</p>
+    <p>การใส่ <strong>คุณลักษณะ (Attribute)</strong> เราจะใส่ในรูปแบบคือ</p>
+    <h3>ชื่อคุณลักษณะ="ค่าที่เรากำหนด"</h3>
+    <p>เช่น การกำหนดค่า คุณลักษณะชื่อ href ให้มีค่าเป็น http://google.co.th จะได้</p>
+    <h3>href="http://google.co.th"</h3>
+    <p>แล้วเราจะนำคุณลักษณะนี้ไปใส่ไว้ใน <strong>TAG เปิด</strong> ของ TAG a โดยจะ<strong>เว้นวรรค</strong>ออกมาจากชื่อ TAG <strong>1 ครั้ง ดังนี้</strong></p>
+    <h3>&lt;a href="http://google.co.th"&gt;</h3>
+    <p>TAG a ข้างต้นจะทำให้ข้อความที่อยู่ภายใน TAG เป็น link ที่เชื่อมต่อไปยัง website ของ google</p>
+    <h4>ตัวอย่าง TAG a ที่ link ไปยัง website ของ facebook</h4>
+    <a href="http://www.facebook.com">Go to Facebook</a>
+    <p>สำหรับการ link ไปยัง Web Page ที่อยู่ใน Website เดียวกัน (เช่น ภายในเครื่องของเรา) หากไฟล์นั้นอยู่ใน Folder เดียวกับไฟล์ที่มี link เราสามารถใส่ชื่อไฟล์ได้ทันที โดยหากเป็นชื่อไฟล์ ต้องใส่ทั้งชื่อและนามสกุลไฟล์ให้ครบถ้วนและถูกต้อง ทั้งพิมพ์เล็กพิมพ์ใหญ่</p>
+    <h4>ตัวอย่าง TAG a ที่ link ไปยัง webpage อื่นใน website เดียวกัน</h4>
+    <a href="03-table-tag.html">Go to Table Tag</a>
+    <p>สำหรับการ link ไปยัง Web Page ที่อยู่คนละ Folder จะใช้วิธี <strong>ยึดที่ ๆ ไฟล์นี้อยู่เป็นหลัก</strong> และหากไฟล์ที่ต้องการ link อยู่ใน Folder ลึกลงไป ให้ทำการลิ้งตามการเข้า Folder ในรูปแบบ <strong>ชื่อโฟลเดอร์/ชื่อไฟล์</strong> หากไฟล์ที่ต้องการ link อยู่ที่ Folder ก่อนหน้า ให้ใช้ <strong>../</strong> (จุดสองตัว) เพื่อแทนการ Back กลับ Folder เช่น โครงสร้ายโฟลเดอร์ดังนี้</p>
+    <dl>
+      <dd>file4.html</dd>
+      <dd>
+        works
+        <dl>
+          <dd>file5.html</dd>
+        </dl>
+      </dd>
+      <dd>
+        programs
+        <dl>
+          <dd>file1.html</dd>
+          <dd>
+          myfile.html
+            <dl>
+              <dd>steam
+                <dl>
+                  <dd>file2.html</dd>
+                  <dl>
+                    <dd>
+                      dota
+                      <dl>
+                        <dd>file3.html</dd>
+                      </dl>
+                    </dd>
+                  </dl>
+                </dl>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </dd>
+    </dl>
+    <p>จาก myfile</p>
+    <ul>
+      <li>
+        ถ้าเราต้องการ link ไปยัง <strong>file1.html</strong> จะต้องใส่คุณลักษณะ (Attribute) <strong>href="file1.html"</strong>
+      </li>
+      <li>
+        ถ้าเราต้องการ link ไปยัง <strong>file2.html</strong> จะต้องใส่คุณลักษณะ (Attribute) <strong>href="/steam/file2.html"</strong>
+      </li>
+      <li>
+        ถ้าเราต้องการ link ไปยัง <strong>file3.html</strong> จะต้องใส่คุณลักษณะ (Attribute) <strong>href="/steam/dota/file3.html"</strong>
+      </li>
+      <li>
+        ถ้าเราต้องการ link ไปยัง <strong>file4.html</strong> จะต้องใส่คุณลักษณะ (Attribute) <strong>href="../file4.html"</strong>
+      </li>
+      <li>
+        ถ้าเราต้องการ link ไปยัง <strong>file5.html</strong> จะต้องใส่คุณลักษณะ (Attribute) <strong>href="../works/file5.html"</strong>
+      </li>
+    </ul>
+    <p>เราสามารถ link ไปหาข้อมูลในหน้าเดียวกันได้โดยการใส่ คุณสมบัติ (Attribute) ที่ชื่อ <strong>id</strong> ให้กับ TAG ที่เราต้องการจะ link ไป และเมื่อจะใส่ปลายทางที่ TAG a เราจะใช้ # นำหน้าตามด้วยชื่อ id เช่น หากต้องการจะ link ไปยัง TAG ที่มี id ชื่อ type จะเขียนได้ว่า href="#type" แล้วนำไปใส่ใน TAG a ดังนี้</p>
+    <a href="#type">Go to id="type"</a>
+    <p>เราสามารถกำหนดให้เมื่อกด link แล้วไปเปิด tab ใหม่ด้วยการใส่ <strong>คุณสมบัติ (Attribute)</strong> ที่ชื่อ <strong>target</strong> ให้มีค่าเป็น <strong>_blank</strong> เช่น</p>
+    <a href="http://google.co.th" target="_blank">ไปกูเกิล</a>
+    <p>สามารถตรวจสอบว่าแต่ละ TAG มีคุณลักษณะอะไรได้ที่ <a target="_blank" href="http://www.w3schools.com/tags/ref_attributes.asp">W3SCHOOL</a></p>
+    <p>สามารถตรวจสอบว่า TAG HTML มีอะไร และ ใช้งานอย่างไรได้ <a target="_blank" href="http://www.w3schools.com/tags/tag_html.asp">ที่นี่</a></p>
+  </body>
+</html>
