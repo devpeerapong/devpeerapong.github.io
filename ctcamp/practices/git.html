@@ -4,7 +4,7 @@
 <head>
 
 <meta charset="utf-8">
-<title>intro_www</title>
+<title>git</title>
 
 
 <style type="text/css">
@@ -527,76 +527,142 @@ div.prism-show-language > div.prism-show-language-label {
 
 <body>
 
-<h1 id="toc_0">พื้นฐาน WWW</h1>
+<h1 id="toc_0">Git</h1>
 
-<h3 id="toc_1">World Wide Web</h3>
+<h3 id="toc_1">Version Control</h3>
 
-<p>คือเครือข่ายเอกสารขนาดใหญ่ที่อยู่สามารถเข้าถึงได้ผ่าน Internet ผ่านทาง Web Browser โดยการกำหนด URL ของที่เราต้องการ</p>
-
-<h3 id="toc_2">ตัวละครหลักในโลก WWW</h3>
+<p>คือ Software ที่ช่วยให้การจัดการบริหาร Source Code เป็นไปอย่างง่าย โดย Key หลักของ Version Control คือ</p>
 
 <ol>
-<li>URL</li>
-<li>Web Browser</li>
-<li>Web Server</li>
-<li>Web Page</li>
+<li>มี Version กำกับทุกครั้งที่เกิดการแก้ไขไฟล์</li>
+<li>แยกงานหลักออกเป็นส่วน ๆ (Branch) และนำมารวมกันในภายหลัง (Merge)</li>
+<li>ติดตามความคืบหน้างานได้ง่ายจากบันทึกงาน (Commit Log)</li>
 </ol>
 
-<h3 id="toc_3">URL (Universal Resource Locator)</h3>
+<h3 id="toc_2">Distributed Version Control Systems</h3>
 
-<p>คือ ที่อยู่ของข้อมูลที่อยู่บนเครือข่าย WWW ไม่ว่าจะเป็นไฟล์ HTML, รูป, เสียงหรือวิดีโอ โดยจะมาในรูปแบบ</p>
+<p>คือระบบ Version Control แบบที่มีไฟล์ต้นฉบับอยู่บน Server เรียกว่า <strong>Repository</strong> แล้วมีเครื่อง Client ทำการ Clone ไฟล์ต้นฉบับบน Server มาที่เครื่องตัวเอง โดยจะได้มาทั้งไฟล์และเวอชั่นต่าง ๆ ที่เกิดขึ้นจากการแก้ไข</p>
 
-<h4 id="toc_4">protocol://domainname/path</h4>
+<h3 id="toc_3">Git</h3>
 
-<p>เช่น</p>
-
-<p>ที่อยู่ของ Website มจธ. คือ <strong>https://www2.kmutt.ac.th</strong><br>
-ที่อยู่ของข้อมูลปริญญาโทใน Website มจธ. คือ <strong>www2.kmutt.ac.th/thai/pro_ungrd</strong></p>
-
-<h3 id="toc_5">Web Page</h3>
-
-<p>คือไฟล์เอกสารที่ส่วนใหญ่ถูกเขียนขึ้นด้วยภาษา HTML (Hyper Text Markup Language) ที่สามารถเข้าถึงได้ผ่านทางเครือข่าย WWW</p>
-
-<h3 id="toc_6">Web Browser</h3>
-
-<p>คือ Application ที่ใช้ในการเข้าถึงเครือข่าย WWW โดยจะรับ URL แล้วทำการส่ง Request ไปที่ปลายทางนั้น เมื่อได้ Response กลับมาจะนำไฟล์ที่ได้มาแสดงผลให้เราเห็น โดย Web Browser ที่ได้รับความนิยมคือ</p>
-
-<ul>
-<li>Google Chrome</li>
-<li>Mozilla Firefox</li>
-<li>Microsoft Edge</li>
-</ul>
-
-<h3 id="toc_7">Web Server</h3>
-
-<p>คือ Program ที่ใช้ในการ Response ข้อมูลต่าง ๆ ที่มีการ Request มาจากต้นทางไม่ว่าจะเป็น</p>
-
-<ul>
-<li>Web Page</li>
-<li>ไฟล์รูป</li>
-<li>ไฟล์เสียง</li>
-<li>ไฟล์วิดีโอ</li>
-</ul>
-
-<h3 id="toc_8">เกิดอะไรขึ้นเมื่อเราเข้า Web</h3>
+<p>คือ Version Control รูปแบบ Distributed Version Control Systems โดยมีขั้นตอนการทำงานง่าย ๆ คือ</p>
 
 <ol>
-<li>เปิด Computer</li>
-<li>เชื่อมต่อ Internet</li>
-<li>เปิด Web Browser</li>
-<li>พิมพ์ URL (http://www2.kmutt.ac.th/thai/pro_ungrd) ในช่องใส่ URL แล้วกด Enter</li>
-<li>Web Browser ส่ง Request ไปยัง Computer ที่มี Domain www2.kmutt.ac.th</li>
-<li>Computer ที่มี Domain www2kmutt.ac.th ที่ลง Web Server ไว้แกะกล่อง Request มาดู</li>
-<li>Web Server เจอ URL http://www2.kmutt.ac.th/thai/pro_ungrd แบ่งได้เป็น
+<li>แก้ไขไฟล์ใน directory</li>
+<li>stage ไฟล์ที่แก้ไข</li>
+<li>commit ไฟล์ที่ stage ไว้</li>
+</ol>
+
+<h3 id="toc_4">Installing Git</h3>
+
+<p>สามารถ Download ได้จาก <em>https://git-scm.com/download</em><br>
+เมื่อติดตั้งเสร็จแล้วให้ทำการเปิด <strong>Command Line</strong> ขึ้นมาเพื่อทำการ set username และ email เพื่อให้ git ใช้ระบุตัวตนเมื่อมีการ commit เกิดขึ้น โดยให้พิมพ์คำสั่งดังนี้<br></p>
+
+<ol>
+<li><strong>git config --global user.name &quot;ชื่อเรา&quot;</strong></li>
+<li><strong>git config --global user.email อีเมล์ของเรา</strong></li>
+</ol>
+
+<p>สังเกตว่าการใส่ <strong>user.name มี double-quote</strong> ครอบ แต่ <strong>user.email ไม่ต้องมี</strong><br>
+เมื่อเสร็จแล้วให้ทำการพิมพ์</p>
+
+<ol>
+<li><strong>git config --list</strong></li>
+</ol>
+
+<p>จะพบว่ามีแถว</p>
+
+<ol>
+<li>user.name=ชื่อที่เราใส่</li>
+<li>user.email=emailที่เราใส่</li>
+</ol>
+
+<p>ถือว่าติดตั้งได้เรียบร้อย</p>
+
+<h3 id="toc_5">Basic Git</h3>
+
+<p>เราสามารถสร้าง Git Project ได้สองวิธีคือ</p>
+
+<ol>
+<li><p>สร้างจาก directory ที่มีอยู่แล้วในเครื่องด้วยคำสั่ง</p>
 
 <ul>
-<li>Domain = www2.kmutt.ac.th</li>
-<li>Path = /thai/pro_ungrd</li>
+<li><strong>git init</strong> เพื่อทำการสร้างไฟล์สำหรับ Repository</li>
+<li><strong>git add .</strong> เพื่อเพิ่มทุกไฟล์เข้าสู่ระบบ Repository</li>
+<li><strong>git commit -m &quot;first commit&quot;</strong> เพื่อทำการ commit ไฟล์ที่ได้ add เข้าสู่ระบบ </li>
 </ul></li>
-<li>Web Server เข้าไปที่ folder /thai/pro_ungrd</li>
-<li>Web Server Response ไฟล์ index.html กลับมาให้ Computer เรา</li>
-<li>Web Browser บน Computer ของเรา Render ไฟล์ index.html ที่ได้รับให้เราเห็น</li>
+<li><p>Clone จาก repository ที่มีอยู่แล้ว คือเรามี Git Repository อยู่บน Server แล้วต้องการ Clone ลงมาที่เครื่องของเรา สามารถทำได้ด้วยคำสั่ง</p>
+
+<ul>
+<li>git clone [url]</li>
+</ul></li>
 </ol>
+
+<p>เมื่อเราทำการแก้ไขไฟล์ใน Repository เราสามารถเช็คว่ามีไฟล์ใดถูกเปลี่ยนแปลงบ้างได้ด้วยคำสั่ง</p>
+
+<ol>
+<li><strong>git status</strong></li>
+</ol>
+
+<p>เมื่อเรามีการเพิ่ม แก้ไข หรือลบไฟล์เราสามารถ stage ไฟล์ ๆ นั้นได้ด้วยคำสั่ง</p>
+
+<ol>
+<li><strong>git add ชื่อไฟล์</strong> - สำหรับเจาะจง stage ไฟล์</li>
+<li><strong>git add .</strong> - สำหรับ stage ทุกไฟล์ที่มีการเปลี่ยนแปลง</li>
+</ol>
+
+<p>เมื่อเราทำการ stage ไฟล์ที่ถูกแก้ไขเรียบร้อยแล้ว เราสามารถทำการ commit ไฟล์ที่ถูก stage ไว้เพื่อเป็นการ update Repository ได้ด้วยคำสั่ง</p>
+
+<ol>
+<li><strong>git commit -m &quot;ข้อความ&quot;</strong></li>
+</ol>
+
+<p>โดยไฟล์ที่ถูกแก้ไข แต่ไม่ได้ถูก stage ไว้ด้วยคำสั่ง <strong>git add</strong> จะไม่ถูกนำมา commit หมายความว่าไฟล์จะเปลี่ยนแปลงแค่ใน<strong>เครื่องเราเท่านั้น</strong> </p>
+
+<p>ข้อความที่ใส่ในการ commit ควรบ่งบอกถึงจุดประสงค์ที่เกิดการแก้ไข ชัดเจน กระชับ เพื่อให้ผู้อื่นที่ร่วมงานสามารถเข้าใจได้ง่าย</p>
+
+<p>เมื่อทำการแก้ไขไฟล์ในเครื่องเรา แล้วทำการ <strong>git add</strong> และ <strong>git commit</strong> เรียบร้อยก็ถึงเวลาที่เราจะทำการอัพไฟล์ไปยังต้นฉบับที่อยู่บน Server หรือเรียกอีกอย่างว่า <strong>Remote Repository</strong> ซึ่งเราสามารถตรวจสอบว่ามี Remote Repository ใดบ้างที่ผูกอยู่กับ Repository ด้วยคำสั่ง</p>
+
+<ol>
+<li><strong>git remove -v</strong></li>
+</ol>
+
+<p>เพิ่ม Remote Repository ได้ด้วยคำสั่ง</p>
+
+<ol>
+<li><strong>git remote add name url</strong>
+
+<ul>
+<li>name คือชื่อเรียกของ remote</li>
+<li>url คือ url ของ remote เช่น <em>https://github.com/git/git.git</em></li>
+</ul></li>
+</ol>
+
+<p>ลบ Remote Repository ได้ด้วยคำสั่ง</p>
+
+<ol>
+<li><strong>git remote rm name</strong>
+
+<ul>
+<li>name คือชื่อเรียกของ remote ที่ต้องการลบ</li>
+</ul></li>
+</ol>
+
+<p>หากต้องการ update ไฟล์บนเครื่องเราไปยัง Remote Repository สามารถทำได้ด้วยคำสั่ง</p>
+
+<ol>
+<li><strong>git push ชื่อremote master</strong></li>
+</ol>
+
+<p>หารต้องการ update ไฟล์บนเครื่องเราให้ตรงกับ version ล่าสุดบน Remote Repository สามารถทำได้ด้วยคำสั่ง</p>
+
+<ol>
+<li><strong>git pull ชื่อremote master</strong></li>
+</ol>
+
+<h1 id="toc_6">Github</h1>
+
+<p>คือ Website ที่ใช้สำหรับสร้าง Remote Repository โดยสามารถเข้าได้ทาง <em>https://github.com</em></p>
 
 
 
